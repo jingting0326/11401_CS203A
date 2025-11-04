@@ -13,7 +13,7 @@
 
 * [**Array (陣列)**](./Array/)
 * [**Linked List (鏈結串列)**](./Link_List/)
-* [**Stack (堆疊)**](./Stack/)
+* [**Stack (堆疊)**](./stack/)
 * [**Queue (佇列)**](./Queue/)
 
 ### 2. 進階資料結構 (Advanced Data Structures)
