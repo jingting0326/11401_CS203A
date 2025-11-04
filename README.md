@@ -8,6 +8,7 @@
 ## 📚 筆記索引 (Table of Contents)
 
 點擊以下連結，查看各章節的詳細資料。
+各章節中的上課簡報含有課堂中所做註記
 
 ### 1. 基礎資料結構 (Basic Data Structures)
 
