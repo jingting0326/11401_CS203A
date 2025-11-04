@@ -2,5 +2,5 @@
 
 ### 1. 基礎資料結構 (Basic Data Structures)
 
-* [**筆記**](./Array/note)
+* [**筆記**](./note/)
   
