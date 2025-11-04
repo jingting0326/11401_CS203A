@@ -12,7 +12,7 @@
 ### 1. 基礎資料結構 (Basic Data Structures)
 
 * [**Array (陣列)**](./Array/)
-* [**Linked List (鏈結串列)**](./LinkedList/)
+* [**Linked List (鏈結串列)**](./Link_List/)
 * [**Stack (堆疊)**](./Stack/)
 * [**Queue (佇列)**](./Queue/)
 
