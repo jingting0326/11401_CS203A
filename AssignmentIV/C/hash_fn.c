@@ -1,21 +1,28 @@
-/*
-   ========================================
-   hash_fn.c — implement your hash functions
-   ========================================
-
-   Description:
-    This file contains the hash functions for integer and string keys.
-
-   Development History:
-    - 2025/11/11: Initial implementation
-
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
- */
 #include <stdio.h>
+/*
+方法: 使用 Division Method。
+公式: index = key % m
+*/
 
+/**
+ * @brief   計算一個整數 key 的 hash 索引
+ * @details 使用 Division Method
+ * @param   key   要進行hash的整數
+ * @param   m     表格大小 
+ * @return  int   計算出的 Hash 索引
+ * 如果 m <= 0，回傳 -1 表示錯誤。
+ */
 int myHashInt(int key, int m) {
-    // TODO: replace with your own design
-    return key % m;  // division method example
+   if (m <= 0) {
+        printf("Error\n");
+        return -1;
+    }
+    int index = key % m;
+    if (index < 0) {
+        index = (index + m) % m;
+    }
+
+    return index;
 }
 
 int myHashString(const char* str, int m) {
