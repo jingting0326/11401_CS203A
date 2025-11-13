@@ -8,12 +8,14 @@
  * @return  int   計算出的 Hash 索引 
  */
 int myHashInt(int key, int m) {
+    //確保m>0
     if (m <= 0) {
         printf("Error\n");
         return -1;
     }
+    //Division Method
     int index = key % m;
-
+    //避免index為負數
     if (index < 0) {
         index = (index + m) % m;
     }
@@ -30,13 +32,15 @@ int myHashInt(int key, int m) {
  */
 int myHashString(const std::string& str, int m) {
     unsigned long hash = 0;
+     //確保m>0
    if (m <= 0) {
         printf("Error\n");
         return -1;
     }
+    //將字元的ASCII加總
     for (char c : str) {
         hash += c;
     }
-    
+    //Division Method
     return static_cast<int>(hash % m);  // basic division method
 }
