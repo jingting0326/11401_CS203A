@@ -24,9 +24,9 @@
 === Hash Function Observation (C Version) ===
 
 === Table Size m = 10 ===
-Key     Index
------------------
-21      1
+* Key     Index
+* -----------------
+* 21      1
 51      1
 52      2
 53      3
