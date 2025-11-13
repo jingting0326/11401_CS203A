@@ -20,8 +20,8 @@
 ## 3. 測試結果與觀察 
 ### A. 整數 Hash(C)
 
-###　執行結果
-=== Hash Function Observation (C Version) ===
+###　執行結果(m=10)
+
 ```text
 === Table Size m = 10 ===
 Key     Index
@@ -52,6 +52,9 @@ Key     Index
 碰撞: 十次(每組2個)
 原因:m=10，每次對策資取餘數時，剛好都看到個位數。
 ```text
+
+###　執行結果(m=11)
+
 === Table Size m = 11 ===
 Key     Index
 -----------------
@@ -81,6 +84,9 @@ Key     Index
 碰撞: 八次
 原因:m=11，11是質數，打亂剛才m=10時的規律
 ```text
+
+###　執行結果(m=37)
+
 === Table Size m = 37 ===
 Key     Index
 -----------------
