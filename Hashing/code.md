@@ -108,3 +108,26 @@ void insert_linear(int key, int value) {
     openAddrTable[index].is_occupied = 1;
 }
 ```
+# Time Complexity 
+
+## 1. Separate Chaining
+
+
+| Operation | Best | Average | Worst |
+| :--- | :--- | :--- | :--- |
+| **Search** | $O(1)$ | $O(1 + \alpha)$ | $O(n)$ |
+| **Insert** | $O(1)$ | $O(1)$ | $O(n)$ |
+| **Delete** | $O(1)$ | $O(1)$ | $O(n)$ |
+
+
+
+---
+
+## 2. Open Addressing
+
+
+| Operation | Average ($\alpha \le 0.7$) | Worst |
+| :--- | :--- | :--- |
+| **Search** | $O(1)$ | $O(n)$ |
+| **Insert** | $O(1)$ | $O(n)$ |
+| **Delete** | $O(1)$ | $O(n)$ |
