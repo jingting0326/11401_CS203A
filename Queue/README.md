@@ -2,3 +2,4 @@
 
 * [**筆記 (PDF)**](./queue_note.pdf)
 * [**上課簡報**](./10_quenes.pdf)
+* [**CODE&Time Complexity**](./code.md)
