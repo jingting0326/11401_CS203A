@@ -22,6 +22,5 @@
 
 * [**Hashing (雜湊)**](./Hashing/)
 * [**Tree (樹)**](./Tree/)
-* [**Binary Search Tree (二元搜尋樹)**](./BST/)
 * [**Heap (堆)**](./Heap/)
 * [**Graph (圖)**](./Graph/)
