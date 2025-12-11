@@ -70,3 +70,12 @@ int *temp = (int *) realloc(array, n * sizeof(int));
 for (int i = n / 2; i < n; i++) {
     array[i] = i + 1;
 ```
+### Time Complexity
+| Operation | Complexity | Notes |
+| :--- | :--- | :--- |
+| **Access** | $O(1)$ | $Direct index lookup$ | 
+| **Update** | $O(1)$ | $Replace at index$ |
+| **Insert** | $O(n)$ | $Requires shifting elements$ | 
+| **Delete** | $O(n)$ | $Requires shifting elements$ | 
+| **Traverse** | $O(n)$ | $Visit all elements$ |
+| **Search** | $O(n)/O(log n)$  | $Linear for unsorted, binary for sorted$ | 
