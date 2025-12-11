@@ -1,3 +1,48 @@
+**定義**: 一種遵循 **先進先出 (First-In-First-Out, FIFO)** 原則的線性資料結構。
+元素從一端（rear）加入，並從另一端（front）移除 。
+
+### ADT: Queue
+* **物件:** 一個包含零個或多個元素的有限有序列表。
+* **函式:**
+  * Queue CreateQ(maxQueueSize): 建立一個指定最大容量的空queue。
+  * Boolean IsFullQ(queue, maxQueueSize): 若滿回傳 true。
+  * Boolean IsEmptyQ(queue): 若空回傳 true。
+  * Queue AddQ(queue): 將項目插入queue尾端 (Enqueue)。
+  * Queue DeleteQ(queue): 移除並回傳queue前端的項目 (Dequeue)。
+ 
+### 實作 1: 基於Array
+**所需變數**:
+  * queue[MAX_SIZE]: 實際儲存資料的陣列。
+  * front: 第一個元素的索引。
+  * rear: 最後一個元素的索引。
+
+**Operations**:
+```c
+// Enqueue 
+rear = (rear + 1) % MAX_SIZE;
+queue[rear] = value;
+
+// Dequeue 
+front = (front + 1) % MAX_SIZE;
+value = queue[front];
+```
+### 實作 2: 基於Linked List
+**所需變數**:
+  * Node* front: 指向第一個節點。
+  * Node* rear: 指向最後一個節點。
+
+**Operations**:
+```c
+// Enqueue
+// 建立新節點 (create new node)
+rear->next = newNode;
+rear = newNode;
+
+// Dequeue
+// 檢查 front != NULL
+front = front->next;
+```
+
 ### 比較
 
 | 特性 | Stack |Queue|
