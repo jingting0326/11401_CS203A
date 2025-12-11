@@ -28,7 +28,7 @@ int hash_string(char *s, int m) {
 // 定義 Node (Key-Value Pair)
 typedef struct Node {
     int key;
-    int value; // 實際資料 [cite: 373]
+    int value;
     struct Node *next;
 } Node;
 
