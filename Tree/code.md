@@ -58,4 +58,4 @@ struct TreeNode {
 |**Unbalanced**|$退化成類似 Linked List$|$O(n)$|
 
 ## AVL tree,紅黑樹等等
-
+* [**筆記作業**](./tree.pdf)
