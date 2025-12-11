@@ -2,3 +2,4 @@
 
 * [**筆記 (PDF)**](./hashing_note.pdf)
 * [**上課簡報**](./hashing.pdf)
+* [**code&Time Complexity**](./code.md)
