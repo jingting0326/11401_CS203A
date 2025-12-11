@@ -2,5 +2,6 @@
 
 * [**Study_Note**](./graph_studynote.pdf)
 * [**上課簡報**](./14_graph_.pdf)
+* [**重點整理**](./note.md)
 
   
