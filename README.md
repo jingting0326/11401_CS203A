@@ -5,6 +5,9 @@
 
 ## Repository Description
 這是114-1資料結構的筆記
+## 作業
+**AssignmentIV**(/AssignmentIV/)
+
 ## 📚 筆記索引 (Table of Contents)
 
 點擊以下連結，查看各章節的詳細資料。
