@@ -2,4 +2,4 @@
 
 * [**筆記作業(max heap,min heap)**](./tree.pdf)
 * [**上課簡報**](./13_heaps.pdf)
-
+* [**重點整理**](./note.md)
