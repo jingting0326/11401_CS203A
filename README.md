@@ -26,4 +26,4 @@
 * [**Hashing (雜湊)**](./Hashing/)
 * [**Tree (樹)**](./Tree/)
 * [**Heap (堆)**](./Heap/) 
-* [**Graph (圖)**](./Graph/) (note待補充)
+* [**Graph (圖)**](./Graph/) 
