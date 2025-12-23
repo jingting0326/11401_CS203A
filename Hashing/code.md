@@ -3,7 +3,7 @@
 最常見的方法，使用餘數運算將 Key 對應到 Table Index 。
 ```c
 int hash_division(int key, int m) {
-    // m 建議使用質數 (例如 1009, 10007) 以減少碰撞
+    // m 建議使用質數，且大於資料量， 以減少碰撞
     return key % m; 
 }
 ```
