@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 時代人類的獨特性 - 廖婧婷</title>
+    <style>
+        /* 全域設定與深色質感背景 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* 簡報容器 */
+        #presentation-container {
+            width: 90vw;
+            height: 85vh;
+            background-color: #1E1E1E;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            position: relative;
+            padding: 40px 60px;
+            box-sizing: border-box;
+            border-top: 5px solid #4DA6FF;
+        }
+
+        /* 單頁簡報設定 */
+        .slide {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+        }
+
+        /* 標題與文字設定 */
+        h1 {
+            color: #4DA6FF;
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        h2 {
+            color: #FFD700;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        h3 {
+            color: #FFFFFF;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: left;
+            width: 80%;
+        }
+        p, li {
+            font-size: 1.5em;
+            line-height: 1.8;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto 15px auto;
+        }
+        ul {
+            width: 80%;
+            margin: 0 auto;
+            padding-left: 40px;
+        }
+        .highlight {
+            color: #FF6666;
+            font-weight: bold;
+        }
+
+        /* 表格設定 */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 1.4em;
+        }
+        th, td {
+            border: 1px solid #4DA6FF;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        th {
+            background-color: #003366;
+            color: #FFF;
+        }
+
+        /* 底部資訊列 */
+        .footer-info {
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            font-size: 1em;
+            color: #888;
+        }
+
+        /* 控制按鈕 */
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+        }
+        button {
+            background-color: #333;
+            color: #4DA6FF;
+            border: 1px solid #4DA6FF;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background-color: #4DA6FF;
+            color: #000;
+        }
+        
+        /* 動畫 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="presentation-container">
+        
+        <!-- Slide 1: 封面 -->
+        <div class="slide active">
+            <h1>AI 時代人類的獨特性</h1>
+            <h2>從「注意力」到「意識」的反思</h2>
+            <div style="margin-top: 50px; text-align: center;">
+                <p style="text-align: center; color: #BBB;">自主學習作業成果報告</p>
+                <p style="text-align: center; font-size: 1.8em; color: #FFF;">姓名：廖婧婷</p>
+                <p style="text-align: center; font-size: 1.8em; color: #FFF;">學號：1111426</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: 課程架構與動機 -->
+        <div class="slide">
+            <h2>課程架構與動機</h2>
+            <h3>探討人類與機器的界線</h3>
+            <ul>
+                <li>為什麼選擇這門課？身為程式學習者，思考<span class="highlight">「代碼邏輯」與「人類心智」</span>的本質差異。</li>
+                <li>本報告聚焦台大課程的兩大核心單元：</li>
+                <ul>
+                    <li>單元一：專注與記憶 (大腦的硬體資源)</li>
+                    <li>單元五：AI 與意識 (大腦的軟體靈魂)</li>
+                </ul>
+            </ul>
+        </div>
+
+        <!-- Slide 3: 注意力經濟 -->
+        <div class="slide">
+            <h2>注意力是稀缺貨幣</h2>
+            <h3>資訊越豐富 ＝ 注意力越匱乏</h3>
+            <ul>
+                <li><span class="highlight">注意力經濟：</span>科技巨頭利用演算法「購買」並「操弄」我們的行為。</li>
+                <li><span class="highlight">FOMO (錯失恐懼)：</span>利用紅點通知消除焦慮，讓人頻繁查看手機。</li>
+                <li><span class="highlight">無限滾動：</span>社群平台的設計，讓我們在不知不覺中交出最珍貴的時間貨幣。</li>
+            </ul>
+        </div>
+
+        <!-- Slide 4: 多工的代價 -->
+        <div class="slide">
+            <h2>多工的代價：蔡克尼克效應</h2>
+            <h1 style="font-size: 4em; color: #FF6666;">T1 + T2 < T3</h1>
+            <ul>
+                <li>人類無法真正「多工」，只能快速「切換任務」。切換任務的總耗時遠大於單獨完成 (T3 > T1+T2)。</li>
+                <li><span class="highlight">蔡克尼克效應：</span>大腦會緊抓著「未完成的任務」不放，產生心理張力。</li>
+                <li>這解釋了為什麼我們無法停止追劇，因為大腦渴望「完成」的釋放感。</li>
+            </ul>
+        </div>
+
+        <!-- Slide 5: 轉折 -->
+        <div class="slide">
+            <h1 style="color: #FFF;">如果我們的注意力與行為，<br>都可以被演算法預測與操控...</h1>
+            <h2 style="margin-top: 40px; color: #4DA6FF;">那我們人類還剩下什麼？</h2>
+        </div>
+
+        <!-- Slide 6: 什麼是意識 -->
+        <div class="slide">
+            <h2>進入意識的領域：什麼是意識？</h2>
+            <h3>意識就是「第一人稱的主觀經驗」</h3>
+            <p style="font-style: italic; color: #FFD700; text-align: center; font-size: 1.8em;">"成為一隻蝙蝠的感覺是什麼？"</p>
+            <p style="text-align: right; color: #888; font-size: 1em;">— 哲學家 Thomas Nagel</p>
+            <ul>
+                <li>從早上醒來到無夢睡眠之間的體驗。</li>
+                <li>愉悅、恐懼、或是看到紅色的「主觀感受」。</li>
+            </ul>
+        </div>
+
+        <!-- Slide 7: 意識的難題 -->
+        <div class="slide">
+            <h2>意識的難題 (The Hard Problem)</h2>
+            <h3>瑪麗房間實驗 (Mary's Room)</h3>
+            <ul>
+                <li>想像神經科學家瑪麗知道世界上所有關於顏色的物理知識，但她一輩子被關在黑白房間裡。</li>
+                <li>當她走出來<span class="highlight">第一次看到「紅色」時，她是否學到了新東西？</span></li>
+                <li>結論：物理機制的客觀運作，無法完全解釋人類的主觀感受 (Qualia)。</li>
+            </ul>
+        </div>
+
+        <!-- Slide 8: 科學界的努力 -->
+        <div class="slide">
+            <h2>科學界的努力</h2>
+            <h3>尋找意識的神經機制</h3>
+            <ul>
+                <li>科學家提出四種主流理論來解釋意識：</li>
+                <ul>
+                    <li><span class="highlight">高階理論：</span>意識是對低階狀態的後設表徵。</li>
+                    <li><span class="highlight">全域工作空間理論：</span>訊息進入大腦中央工作區交換才產生意識。</li>
+                    <li><span class="highlight">整合訊息理論：</span>意識是大腦後區整合複雜訊息的程度。</li>
+                    <li><span class="highlight">預測處理理論：</span>大腦不斷預測感官訊息並更新。</li>
+                </ul>
+            </ul>
+        </div>
+
+        <!-- Slide 9: AI 有意識嗎？ -->
+        <div class="slide">
+            <h2>AI 有意識嗎？</h2>
+            <h3>圖靈測試 vs. 中文房間理論</h3>
+            <ul>
+                <li><span class="highlight">圖靈測試 (外在行為)：</span>只要 AI 表現得像人，就算有智慧。</li>
+                <li><span class="highlight">中文房間理論 (內在理解)：</span>哲學家 John Searle 提出，在房間裡按規則翻譯中文的人，外人以為他懂中文，但他其實「毫無理解」。</li>
+                <li>這正是現代 AI (如大型語言模型) 的現況。</li>
+            </ul>
+        </div>
+
+        <!-- Slide 10: 運算 vs 體驗 -->
+        <div class="slide">
+            <h2>AI 只是「運算」，而非「體驗」</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>人類 (Human)</th>
+                    <th>人工智慧 (AI)</th>
+                </tr>
+                <tr>
+                    <td>運作基礎</td>
+                    <td>主觀經驗、感質 (Qualia)</td>
+                    <td>機率運算、規則配對</td>
+                </tr>
+                <tr>
+                    <td>面對資訊</td>
+                    <td>會感到痛苦、快樂、疲勞</td>
+                    <td>僅是數據處理，無主觀感受</td>
+                </tr>
+                <tr>
+                    <td>本質差異</td>
+                    <td><span class="highlight">擁有意識</span></td>
+                    <td>無意識</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Slide 11: 總結與反思 -->
+        <div class="slide">
+            <h2>總結與反思</h2>
+            <h3>從 Object-Oriented 到 Human-Oriented</h3>
+            <ul>
+                <li>在學習物件導向程式 (OOP) 時，我們用屬性與方法來模擬真實世界。</li>
+                <li>但這門課讓我明白，人類最珍貴的<span class="highlight">「意識」與「注意力」</span>，是無法被封裝成物件的。</li>
+                <li>AI 是強大的運算工具，但「體驗世界」的能力，是人類不可取代的特權。</li>
+            </ul>
+        </div>
+
+        <!-- Slide 12: Q&A -->
+        <div class="slide">
+            <h1 style="font-size: 5em;">Thank You!</h1>
+            <h2>感謝聆聽與指教</h2>
+            <div style="margin-top: 50px;">
+                <p style="text-align: center; font-size: 1.5em; color: #FFF;">報告人：廖婧婷 (1111426)</p>
+            </div>
+        </div>
+
+        <!-- 底部與按鈕 -->
+        <div class="footer-info">台大 OCW《AI 時代人類的獨特性》自主學習報告 | 廖婧婷</div>
+        <div class="controls">
+            <button onclick="prevSlide()">❮ 上一頁</button>
+            <button onclick="nextSlide()">下一頁 ❯</button>
+        </div>
+    </div>
+
+    <!-- 換頁邏輯 -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+        
+        // 支援鍵盤左右鍵換頁
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowRight') nextSlide();
+            if (event.key === 'ArrowLeft') prevSlide();
+        });
+    </script>
+</body>
+</html>
